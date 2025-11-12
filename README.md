@@ -1,40 +1,24 @@
+# Portfiolo
 
-_ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ 
-## ContactList_Adressbok
-Ett enkelt C#-program för att hantera kontakter.
+Här samlar jag projekt jag byggt under mina studier inom C# och .NET. 
 
-### Funktioner
-- Lägg till, uppdatera, ta bort, sök kontakter och visa kontaktlistan.
-- Sparar till fil och loggar fel
+## Projekt:
 
-### Bakgrund/Syfte
-Detta projekt skapades som mitt första portfolioprojekt under min första C#-kurs. Syftet var att lära mig grundläggande objektorientering, filhantering och användarinteraktion via konsol.
+### [ContactList_Adressbok](./ContactList_Adressbok)
+Ett konsolprogram i C# för att hantera kontakter. Användaren kan lägga till, söka, uppdatera och ta bort kontakter som sparas i en textfil.  
 
-### Möjliga förbättringar / framtida idéer
-- GUI istället för konsol
-- Använda databas istället för textfil
-_ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ _
+### [Shotgun_Game](./Shotgun_Game)
+Ett spel byggt i C# där användaren möter datorn i en variant av "sten, sax, påse" kallad *Shotgun*.  
 
-## Shotgun
-Ett enkelt C#-spel där spelaren möter datorn i en variant av “sten, sax, påse”.
+Varje projekt innehåller en egen README med mer information. Fler projekt kommer!
 
-### Funktioner
-- Spela “Shotgun” mot datorn
-- Datorn väljer sitt drag slumpmässigt
-- Logik för laddning, blockering, skott och specialattack (“Shotgun”)
-- Resultat visas efter varje omgång
+## Tekniker & Verktyg
+- C# (.NET)
+- Objektorienterad programmering (OOP)
+- Filhantering (StreamReader/Writer)
+- Versionshantering med Git & GitHub
+- Visual Studio
 
-### Bakgrund / Syfte
-Detta projekt skapades som ett övningsprojekt under min första C#-kurs. Syftet var att träna if-satser, loopar, slumpgenerering, användarinmatning och spelloopar i konsolmiljö.
 
-### Regler / Spelidé
-- Varje spelare kan välja mellan Ladda, Blocka eller Skjuta.
-- Man måste ladda innan man kan skjuta.
-- För att vinna krävs att man skjuter när motståndaren inte blockar eller skjuter.
-- När en spelare har samlat 3 skott blir det "Shotgun" och spelaren vinner direkt.
 
-  ### Möjliga förbättringar / framtida idéer
-  - GUI istället för konsol
-  - Flerspelarläge
-  - Olika "strategier"/"smartare logik" för datorn
-  _ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ __ _ _ _
+
