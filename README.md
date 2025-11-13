@@ -1,4 +1,4 @@
-# Portfiolo
+# Portfolio
 
 Här samlar jag projekt jag byggt under mina studier inom C# och .NET. 
 
