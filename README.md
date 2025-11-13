@@ -19,6 +19,3 @@ Varje projekt innehåller en egen README med mer information. Fler projekt komme
 - Versionshantering med Git & GitHub
 - Visual Studio
 
-
-
-
