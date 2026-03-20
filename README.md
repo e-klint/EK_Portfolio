@@ -4,7 +4,7 @@ Här samlar jag projekt jag byggt under mina studier inom C# och .NET.
 
 ## Projekt:
 
-### [ContactList_Adressbok](./ContactList_Adressbok/EK_Contactlist.sln)
+### [ContactList_Adressbok](./Contactlist_Adressbok)
 Ett konsolprogram i C# för att hantera kontakter. Användaren kan lägga till, söka, uppdatera och ta bort kontakter som sparas i en textfil.  
 
 ### [Shotgun_Game](./Game_Shotgun)
