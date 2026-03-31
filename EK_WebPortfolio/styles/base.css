@@ -1,0 +1,121 @@
+
+/* RESET */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding:0;
+}
+
+/* BASE (body styling, typografi, globala defaults) */ 
+body{
+    font-family: "Lato";
+    font-weight: 400;
+    font-style: normal;
+    color: #f4f3eeff;
+}
+
+section{
+  width: 100%;
+}
+
+/* TYPOGRAFI */
+h1{
+  font-family: "Grand Hotel", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #463f3aff; 
+}
+
+h2{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+h3{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+/* Kunskap och referenser-Används i kodblock*/
+h5{
+color: blue;
+font-size: bold;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+/* GLOBALA DEFAULTS */
+nav{
+  width: 100%
+}
+
+ul{
+list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Hover-effekt som används på alla icons utom tech-icons */
+i {
+  transition: text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+a:hover i{
+  text-shadow: 0 0 8px rgba(255, 200, 80, 0.9);
+  transform: scale(1.2);
+}
+
+input, textarea{
+  width:100%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: 2px solid  #f4f3eeff;
+  margin: 0.5rem;
+}
+
+label{
+  text-align: start;
+  margin-left: 0.5rem;
+}
+
+pre{
+  background-color: #1E1E1E;
+  width: 90%;
+  height: 100%;
+  padding: 2px;
+  margin: 5% 0;
+  white-space: pre-line;
+}
+
+footer{
+  padding: 2rem 0rem;
+}

@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/utilities.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
+    <script
+      src="https://kit.fontawesome.com/abb3de6a11.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- SIGNATURE -->
+    <div id="home" class="flx-container center bcolor-silver">
+      <h1>Emelie Klint</h1>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="bcolor-parchment flx-container space-between">
+      <div class="ml-10p flx-container center">
+        <a href="#home"
+          ><img
+            src="images/logo2.png"
+            class="logo w100"
+            alt="Logga med initialer EK"
+        /></a>
+      </div>
+      <ul id="nav-menu" class="flx-container mr-10p link-underline">
+        <li class="pl-3r">
+          <a href="#aboutMe" class="tcolor-taupe slider">Om mig</a>
+        </li>
+        <li class="pl-3r">
+          <a href="#MyProjects" class="tcolor-taupe slider">Mina projekt</a>
+        </li>
+        <li class="pl-3r">
+          <a href="#testimonials" class="tcolor-taupe slider">Kunskap</a>
+        </li>
+        <li class="pl-3r">
+          <a href="#contact" class="tcolor-taupe slider">Kontakt</a>
+        </li>
+      </ul>
+      <!-- MOBIL- Hamburgermeny (dold i desktop/tablet) -->
+      <div id="hamburger-menu" class="flx-container center-x">
+        <a href="javascript:void(0);" onclick="menuToggle()"
+          ><i id="bars-icon" class="fa-solid fa-bars fa-2xl tcolor-taupe"></i
+        ></a>
+        <ul id="mobile-nav-options" class="link-underline">
+          <li><a href="#aboutMe" class="tcolor-taupe slider">Om mig</a></li>
+          <li>
+            <a href="#MyProjects" class="tcolor-taupe slider">Mina Projekt</a>
+          </li>
+          <li>
+            <a href="#testimonials" class="tcolor-taupe slider">Kunskap</a>
+          </li>
+          <li><a href="#contact" class="tcolor-taupe slider">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <!-- HERO -->
+      <section class="slider">
+        <img
+          src="images/forest1.png"
+          alt="Skog i solnedgång"
+          class="cover-img"
+        />
+        <!--</div>-->
+        <div
+          class="contrast-box w80 content-positioner-center-top border-left-parchment flx-container column"
+        >
+          <h2 class="t-right">Blivande .NET-utvecklare med molninriktning</h2>
+          <h4 id="subheading" class="tcolor-parchment italic t-right">
+            Jag gillar att bygga stabila applikationer i C#- med fokus på
+            struktur, logik och ett naturligt flöde.
+          </h4>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- OM MIG -->
+      <section
+        id="aboutMe"
+        class="bcolor-grey-olive flx-container column center pb-36px"
+      >
+        <h3>OM MIG</h3>
+        <div class="flx-container wrapper">
+          <!-- VÄNSTER BOX- bild och knappar. -->
+          <figure class="m-0 box-item flx-container center column">
+            <img
+              src="images/porträtt.png"
+              alt="Porträttbild"
+              class="about-me-img"
+            />
+            <div
+              id="btn-container"
+              class="flx-container space-between w80 pb-5"
+            >
+             <a
+                href="http://linkedin.com/in/emelie-klint-58493a264" target="_blank"
+                id="cta-btn"
+                class="btn w45 flx-container center"
+              >
+                LinkedIn
+              </a>
+              <button
+                type="button"
+                onclick="startDownload()"
+                id="cv-btn"
+                class="btn w45 bcolor-powder-blush"
+              >
+                Ladda ned CV
+              </button>
+            </div>
+          </figure>
+          <!-- HÖGER BOX- presentationstext. -->
+          <figure class="m-0 box-item flx-container center column">
+            <div class="flx-container column p-10p t-center">
+              <p class="font-z-medium italic">
+                Motiverad .NET-student med molninriktning som trivs nästan lika
+                bra i molnet som i skogen. Tidigare språklärare med god
+                kommunikationsförmåga och erfarenhet av att arbeta med
+                människor. Jag värdesätter samarbete och kollegialt lärande.
+                Brinner för att bygga och problemlösa med målsättning att
+                utveckla tekniska färdigheter, främst inom .NET och
+                molnlösningar.
+              </p>
+              <p class="font-z-medium italic">
+                Jag har ett intresse för teknik och är nyfiken på att lära mig
+                fler webbutvecklingsteknologier. På fritiden promenerar jag
+                gärna i skogen eller reser till Frankrike med familjen.
+              </p>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <!-- MINA PROJEKT -->
+      <section
+        id="MyProjects"
+        class="bcolor-silver flx-container column center pb-36px"
+      >
+        <h3 class="tcolor-taupe">MINA PROJEKT</h3>
+        <div class="slideshow-container slider">
+          <article class="flx-container slideshow-inner-wrapper">
+            <!-- CARD: COMING SOON: TRAVEL BLOG FULLSTACK -->
+            <figure class="card bcolor-taupe flx-container column">
+              <img
+                src="images/coming-soon.png"
+                alt="Skog och vattendrag med texten 'Kommer Snart'."
+                class="img-on-card"
+              />
+              <div class="flx-container column h100">
+                <div class="flx-container column space-between mt-1r mb-1r">
+                  <h4 class="ml-1r mb-1r">Kommer snart: Travel Blog</h4>
+                  <div class="flx-container space-around w100">
+                    <img
+                      src="icons/icons8-c-sharp-logo-96.png"
+                      alt="C#-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/icons8-.net-framework-96.png"
+                      alt=".NET-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/html.png"
+                      alt="HTML5-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/css-3.png"
+                      alt="CSS3-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/java-script.png"
+                      alt="CSS3-icon"
+                      class="tech-logo"
+                    />
+                  </div>
+                </div>
+                <p class="ml-1r mb-1r">
+                  En reseblogg med CRUD-funktionalitet där användare kan läsa,
+                  söka och skapa konto. Systemet hanterar behörighet och sökning
+                  på titel eller kategori.
+                </p>
+
+                <p class="ml-1r mb-1r">
+                  Teknik: ASP.NET Web API och Entity Framework för
+                  databasinteraktion. Säkerhet och inloggning hanteras med JWT,
+                  API:et dokumenteras med Swagger och frontend i React.
+                </p>
+                <div class="card-icons ml-1r mb-1r">
+                  <a
+                    href="#"
+                    target="_blank"
+                    class="tcolor-parchment icon-background"
+                    ><i class="fa-brands fa-github fa-2xl"></i
+                  ></a>
+                  <a href="" target="_blank" class="tcolor-parchment"
+                    ><i class="fa-solid fa-play fa-2xl"></i
+                    ><span>LIVE DEMO</span></a
+                  >
+                </div>
+              </div>
+            </figure>
+            <!-- CARD: ASP .NET BANK API -->
+            <figure
+              class="card bcolor-taupe tcolor-parchment flx-container column"
+            >
+              <img
+                src="images/bankapi.png"
+                alt="Bild på Swagger-dokumentation av Bank Api."
+                class="img-on-card"
+              />
+              <div class="flx-container column h100">
+                <div class="flx-container column space-between mt-1r mb-1r">
+                  <h4 class="ml-1r mb-1r">ASP.NET Api: Bank App</h4>
+                  <span class="flx-container space-around w30">
+                    <img
+                      src="icons/icons8-c-sharp-logo-96.png"
+                      alt="C#-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/icons8-.net-framework-96.png"
+                      alt=".NET-icon"
+                      class="tech-logo"
+                    />
+                  </span>
+                </div>
+                <p class="ml-1r mb-1r">
+                  Api som hanterar kunder och administratörer med funktioner som
+                  skapa konto, inlogg, lånhantering samt överföringar.
+                </p>
+                <p class="ml-1r mb-1r">
+                  Teknik: ASP.NET Web API, JWT för autentisering och
+                  auktorisering samt relationsdatabas för lagring av användare,
+                  konton och transaktioner. Testad via Postman.
+                </p>
+                <div class="ml-1r mb-1r card-icons">
+                  <a
+                    href="https://github.com/e-klint/EK_Portfolio/tree/master/ApiBankApp"
+                    target="_blank"
+                    class="tcolor-parchment"
+                    ><i class="fa-brands fa-github fa-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </figure>
+            <!-- CARD: Adressbok -->
+            <figure class="card bcolor-taupe flx-container column">
+              <img
+                src="images/Addressbok.png"
+                alt="Bild på det textbaserade spelet Shotgun."
+                class="img-on-card"
+              />
+              <div class="flx-container column">
+                <div class="flx-container column space-between mt-1r mb-1r">
+                  <h4 class="ml-1r mb-1r">Console App: Adressbok</h4>
+                  <span class="flx-container space-around w30">
+                    <img
+                      src="icons/icons8-c-sharp-logo-96.png"
+                      alt="C#-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/icons8-.net-framework-96.png"
+                      alt=".NET-icon"
+                      class="tech-logo"
+                    />
+                  </span>
+                </div>
+                <p class="ml-1r mb-1r">
+                  En textbaserad konsolapplikation,, där användaren kan lägga
+                  till, uppdatera, ta bort, söka och lista kontakter.
+                  Kontakterna sparas till fil.
+                </p>
+                <p class="ml-1r mb-1r">
+                  Teknik: OOP med klasser för kontakter, adressbok,
+                  filhantering, metoder för användarval och korrekt inmatning.
+                  Fokus på filhantering, felhantering, tydlig struktur och
+                  återanvändbar kod.
+                </p>
+                <div class="card-icons ml-1r mb-1r">
+                  <a
+                    href="https://github.com/e-klint/EK_Portfolio/tree/master/Contactlist_Adressbok"
+                    target="_blank"
+                    class="tcolor-parchment"
+                    ><i class="fa-brands fa-github fa-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </figure>
+            <!-- CARD: SHOTGUN -->
+            <figure class="card bcolor-taupe flx-container column">
+              <img
+                src="images/shotgun.png"
+                alt="Bild på det textbaserade spelet Shotgun."
+                class="img-on-card"
+              />
+              <div class="flx-container column h100">
+                <div class="flx-container column space-between mt-1r mb-1r">
+                  <h4 class="ml-1r mb-1r">Console App: Shotgun</h4>
+                  <span class="flx-container space-around w30">
+                    <img
+                      src="icons/icons8-c-sharp-logo-96.png"
+                      alt="C#-icon"
+                      class="tech-logo"
+                    />
+                    <img
+                      src="icons/icons8-.net-framework-96.png"
+                      alt=".NET-icon"
+                      class="tech-logo"
+                    />
+                  </span>
+                </div>
+                <p class="ml-1r mb-1r">
+                  En textbaserad version av det klassiska “Shotgun”-spelet, där
+                  spelaren kan välja mellan att skjuta, ladda eller blocka.
+                </p>
+                <p class="ml-1r mb-1r">
+                  Teknik: Objektorienterat i C#, med klasser för spelare och
+                  spel-logik, metoder för varje drag, samt kontroll av regler
+                  och skott. Fokus på tydlig struktur samt återanvändbar kod.
+                </p>
+                <div class="card-icons ml-1r mb-1r">
+                  <a
+                    href="https://github.com/e-klint/EK_Portfolio/tree/master/Game_Shotgun"
+                    target="_blank"
+                    class="tcolor-parchment"
+                    ><i class="fa-brands fa-github fa-2xl"></i
+                  ></a>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <!-- KUNSKAP OCH REFERENSER -->
+      <section
+        id="testimonials"
+        class="bcolor-grey-olive flx-container column center pb-36px"
+      >
+        <h3 class="tcolor-parchment">KUNSKAP OCH REFERENSER</h3>
+        <div class="flx-container wrapper">
+          <!-- VÄNSTER BOX- kunskaper -->
+          <figure class="m-0 box-item flx-container center column">
+            <pre class="p-1r flx-container center"><code>
+<span class="blue">public static class</span> DeveloperSkills
+{
+    <span class="blue">public static readonly string[]</span>  Programming =
+    <span class="orange"> [
+        "C#", ".NET", "ASP.NET Web API",
+        "Entity Framework Core", "AutoMapper",
+        "JWT Authentication", "HTML", "CSS", "JavaScript"
+     ];</span>
+
+    <span class="blue">public static readonly string[]</span> Databases =
+    <span class="orange"> [
+        "SQL", "SQL Server"
+     ];</span>
+
+    <span class="blue">public static readonly string[]</span> Cloud =
+    <span class="orange"> [
+        "Azure", "Docker", "Docker Hub"
+     ];
+    </span>
+    <span class="blue">public static readonly string[]</span> Tools =
+    <span class="orange"> [
+        "Visual Studio", "VS Code", "Git", "GitHub",
+        "Postman", "Swagger", "SSMS"
+     ];</span>
+}
+
+</code>
+              </pre>
+          </figure>
+          <!-- HÖGER BOX- referenser -->
+          <figure class="m-0 box-item flx-container center column">
+            <div class="slider h100 w100 mtb5">
+              <!-- Testimonial 1 -->
+              <figure
+                id="testimonial1"
+                class="h100 center column testimonialCard testimonialSlide"
+              >
+                <div class="contrast-box flx-container center column">
+                  <img
+                    src="images/erik.jpg"
+                    alt="Profilbild av referens Erik Nilsson"
+                    class="profile-img"
+                  />
+                  <h4 class="plr-1r t-center">
+                    Erik Nilsson, Senior .NET Developer
+                  </h4>
+                  <p class="italic m-1r mb-24px t-center">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                  </p>
+                </div>
+              </figure>
+              <!-- Testimonial 2 -->
+              <figure
+                id="testimonial2"
+                class="h100 center column testimonialCard testimonialSlide"
+              >
+                <div class="contrast-box flx-container center column">
+                  <img
+                    src="images/johan.jpg"
+                    alt="Profilbild av referens Johan Berg"
+                    class="profile-img"
+                  />
+                  <h4 class="plr-1r t-center">Johan Berg, Tech Lead</h4>
+                  <p class="italic m-1r mb-24px t-center">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed do eiusmod tempor incididunt ut labore.Lorem ipsum dolor
+                    sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+                    incididunt ut labore."
+                  </p>
+                </div>
+              </figure>
+              <!-- Testimonial 3 -->
+              <figure
+                id="testimonial3"
+                class="h100 center column testimonialCard testimonialSlide"
+              >
+                <div class="contrast-box flx-container center column">
+                  <img
+                    src="images/maria.jpg"
+                    alt="Profilbild av referens Maria Svensson"
+                    class="profile-img"
+                  />
+                  <h4 class="plr-1r t-center">
+                    Maria Svensson, Software Architect
+                  </h4>
+                  <p class="italic m-1r mb-24px t-center">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus luctus urna sed urna ultricies ac tempor dui
+                    sagittis."
+                  </p>
+                </div>
+              </figure>
+              <a onclick="changeSlide(-1)" class="prev"
+                ><i
+                  class="fa-solid fa-angle-left fa-2xl"
+                  style="color: #f4f3ee"
+                ></i
+              ></a>
+              <a onclick="changeSlide(1)" class="next"
+                ><i
+                  class="fa-solid fa-angle-right fa-2xl"
+                  style="color: #f4f3ee"
+                ></i
+              ></a>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <!-- KONTAKT -->
+      <section id="contact" class="flx-container center h100vh">
+        <div class="wrapper">
+          <div class="contrast-box">
+            <h3 class="tcolor-parchment t-center">KONTAKT</h3>
+            <!-- Kontaktformulär -->
+            <form
+              action="https://formsubmit.co/f52d5abeb3beb1bf120916e664b85a15"
+              method="post"
+              class="flx-container center"
+            >
+              <!-- FormSubmit-inställning som ej ska synas för användaren  -->
+              <!-- (aktiverar spam-skydd) -->
+              <input type="hidden" name="_captcha" value="true" />
+              <!-- (formaterar mailet) -->
+              <input type="hidden" name="_template" value="table" />
+              <!-- (användaren skickas till tack-sidan) -->
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/thanks.html"
+              />
+              <div class="form-container flx-container column">
+                <!-- Förnamn -->
+                <label for="fname">Förnamn:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  required
+                  minlength="2"
+                  pattern="[A-Za-zÅÄÖåäö\- ]+"
+                  placeholder="Ange ditt förnamn (minst 2 bokstäver)"
+                /><!-- Efternamn -->
+                <label for="lname">Efternamn:</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  required
+                  minlength="2"
+                  pattern="[A-Za-zÅÄÖåäö\- ]+"
+                  placeholder="Ange ditt efternamn (minst 2 bokstäver)"
+                /><!-- E-mail -->
+                <!-- Pattern kontrollerar:
+          minst ett tecken före @
+          minst ett tecken efter @
+          minst en punkt i slutet
+          Dokumentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/pattern -->
+                <label for="email">E-mail:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                  placeholder="namn@example.com"
+                /><!-- Ämne -->
+                <label for="topic">Ämne:</label>
+                <input type="text" id="topic" name="topic" />
+                <!-- Meddelande -->
+                <label for="message">Meddelande:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  cols="50"
+                ></textarea>
+                <button type="submit" class="btn send-btn w100">Skicka</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="bcolor-parchment flx-container space-between">
+        <!-- Sociala medier -->
+        <div class="ml-10p flx-container column center-x">
+          <h4 class="tcolor-taupe font-z-2r">Sociala medier</h4>
+          <p class="tcolor-taupe italic mb-1r">
+            Besök gärna min LinkedIn och se mina projekt på GitHub och DockerHub
+          </p>
+          <div class="w30 flx-container">
+            <a
+              href="http://linkedin.com/in/emelie-klint-58493a264"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin fa-2xl sm-icons"
+                style="color: rgb(116, 192, 252)"
+              ></i
+            ></a>
+            <a href="https://github.com/e-klint/EK_Portfolio" target="_blank"
+              ><i class="fa-brands fa-github fa-2xl tcolor-taupe sm-icons"></i
+            ></a>
+            <a href="http://"
+              ><i
+                class="fa-brands fa-docker fa-2xl sm-icons"
+                style="color: rgb(116, 192, 252)"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <!-- Väderapp -->
+        <div class="mr-10p">
+          <form action="post" class="weatherForm">
+            <label for="city" class="tcolor-taupe bold">Ska du ut idag?</label>
+            <input
+              type="text"
+              class="cityInput"
+              name="city"
+              placeholder="Din stad"
+            />
+            <button type="submit" class="btn weather-btn w100">
+              Kolla vädret!
+            </button>
+          </form>
+          <!-- Väder-kort -->
+          <div style="display: none;"class="weatherCard tcolor-taupe flx-container center p-1r mt-1r" >
+            <!-- style="display: none; -->
+            <!-- <h4 class="mb-1r">Paris</h4>
+            <img
+              src="https://openweathermap.org/payload/api/media/file/10d.png"
+              alt=""
+              class="weatherIcon"
+            />
+            <p>20C</p>
+            <p class="descriptionDisplay italic">Clear Skies</p> -->
+            <!-- <p class="errorDisplay">Felmeddelande: Ange stad.</p> -->
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

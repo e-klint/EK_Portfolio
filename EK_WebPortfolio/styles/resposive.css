@@ -1,0 +1,142 @@
+/* DESKTOP FIRST - samling av stilar för surfplatta och mobil nedan */
+
+/* BIG SCREEN */
+@media (min-width: 2560px){
+
+.font-z-medium{
+  font-size: 2rem;
+}
+
+}
+
+/* SURFPLATTA */
+@media (min-width: 768px) and (max-width: 1023px) {
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+    #bars-icon{
+    position: absolute; 
+    top: 39px;
+    right: 50px; 
+  }
+
+  #mobile-nav-options{
+    top: 78px;
+  }
+
+/* MINA PROJEKT */
+  .card {
+    min-width: 300px;
+  }
+
+  /* KUNSKAP OCH REFERENSER */
+   .profile-img {
+    max-width: 80px;
+  }
+
+  /* KONTAKT */
+  .form-container {
+    width: 70%;
+  }
+}
+
+/* SURFPLATTA OCH MOBIL */
+@media(max-width: 1023px){
+
+  #nav-menu {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+    position: relative;
+    width: 150px;
+  } 
+
+  #mobile-nav-options{
+    position: absolute;
+    right: -1px;
+    display: none;
+    flex-direction: column;
+    padding-left: 0rem;
+    padding: 1rem;
+    background-color: #f4f3eeff;
+    opacity: 0.9;
+    margin: 0;
+    border: 2px #463f3aff solid;
+  }
+
+  .link-underline a:after{
+    bottom: -2px;
+}
+}
+
+/* MOBIL */
+@media (max-width: 767px) {
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  #subheading{
+    font-size: 0.5rem;
+  }
+
+   /* NAV */
+  nav{
+    height: 60px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+    #bars-icon{
+    position: absolute; 
+    top: 29px;
+    right: 50px; 
+  }
+
+   #mobile-nav-options{
+    top: 58px;
+  }
+
+  /* ABOUT ME */
+  .box-item {
+    min-width: 250px;
+  }
+
+  #btn-container{
+    flex-direction: column;
+  }
+
+  .btn{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .font-z-medium{
+    font-size: 1rem;
+  }
+
+  /* MY PROJECTS */
+ .card {
+    min-width: 250px;
+  }
+
+   /* KUNSKAP OCH REFERENSER */
+  .profile-img {
+    max-width: 50px;
+  }
+
+  .prev, .next{
+  font-size: 24px;
+  }
+
+  /* KONTAKT */
+  .form-container {
+    width: 80%;
+  }
+}

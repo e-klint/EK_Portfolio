@@ -1,0 +1,79 @@
+/* ÅTERANVÄNDBAR LAYOUT */
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Används vid split-page layout (OM MIG & KUNSKAP OCH REFERENSER */
+.box-item {
+    flex: 1 1 45%;
+    min-width: 300px;
+    border: 3px solid #f4f3eeff;
+}
+
+/* Positions */
+.flx-container{
+    display: flex;
+}
+
+.center{
+justify-content: center;
+align-items: center;
+align-content: center; 
+}
+
+.center-x{
+    justify-content: center;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.t-right{
+    text-align: start;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.slideshow-container{
+    width: 80%;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.slider{
+    position: relative;
+}
+
+.slideshow-inner-wrapper{
+    justify-content: flex-start;
+    transition: transform 0.5s ease;
+}
+
+.content-positioner-center-top{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); 
+}
+
+/* LAYOUT PÅ SPECIFIKA ELEMENT/KLASSER */
+#nav-menu{
+  justify-content: flex-end;
+  align-items: center;
+}

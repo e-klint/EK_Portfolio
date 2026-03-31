@@ -1,0 +1,253 @@
+
+/* COMPONENTS SOM ÅTERANVÄNDS */
+.contrast-box{
+    background-color: rgba(47, 42, 36, 0.6);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.btn{
+   border: 2px solid #463f3aff;
+   /* border-radius: 15px; */
+   padding: 0.5rem;
+   background-color: #f4f3eeff;
+   color: #463f3aff;
+   cursor: pointer;
+   transition: all 0.3s;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.btn:hover{
+   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 18px;
+   transform: translateY(-2px);
+} 
+
+.cover-img{
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover; 
+}
+
+/* KLASSER SOM FÖLJER WEBBSIDANS STRUKTUR UPPIFRÅN OCH NER */
+
+/* NAVBAR */
+.logo{
+  height: 120px; 
+  transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1, 1.1);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 18px;   
+}
+
+#hamburger-menu{
+    display: none;
+}
+
+nav{
+    opacity: 0.9;
+    border: #463f3aff 1px solid;
+    height: 80px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.link-underline a:after{
+    content: "";
+    position: absolute;
+    background-color: #463f3aff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.link-underline a:hover:after{
+    width:100%;
+}
+
+
+/* HERO */ 
+
+.border-left-parchment{
+    border-left: 5px solid #f4f3eeff;
+    border-width: 10px;
+    padding-left: 3rem;
+    margin: 1rem 0;
+}
+
+/* OM MIG */
+.cta-btn:hover{
+background-color: linear-gradient(180deg,rgba(100, 149, 237, 1) 0%, rgba(9, 9, 121, 1) 4%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.about-me-img{
+    padding: 5% 0;
+    max-width: 80%;
+}
+
+/* MINA PROJEKT */
+.card{
+    opacity: 0.9;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 18px;
+    border-radius: 15px;
+    width: 31%;
+    min-width: 300px;
+    flex-shrink: 0;
+    margin-inline-start: 0px; 
+    transition: all 0.3s;
+}
+
+.card:hover{
+transform: translateY(-5px);
+}
+
+.img-on-card{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.card-icons{
+    margin-top: auto;
+}
+
+.tech-logo{
+    height: 32px;
+    width: 32px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.tech-logo:hover {
+  filter: drop-shadow(0 0 6px rgba(255, 200, 80, 0.8));
+  transform: scale(1.15);
+}
+
+
+/* Scroll-bar styling */
+.slideshow-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.slideshow-container::-webkit-scrollbar-track {
+      background: rgba(244, 243, 238, 0.15); /* parchment, mycket genomskinlig */
+     border-radius: 10px;
+}
+
+.slideshow-container::-webkit-scrollbar-thumb {
+    background: rgba(70, 63, 58, 0.5); /* taupe halvgenomskinlig */
+    border-radius: 10px;
+    border: 1px solid rgba(244, 243, 238, 0.2);
+}
+
+
+/* KUNSKAP OCH REFERENSER */
+.profile-img{
+    width:80%;
+    max-width: 100px;
+    margin: 24px auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #f4f3eeff;
+}
+
+.testimonialSlide {
+  display: none;
+}
+
+#testimonial1{
+background-image: url("../images/testimonial1.png");
+}
+
+#testimonial2{
+background-image: url("../images/testimonal2.png");
+}
+
+#testimonial3{
+background-image: url("../images/testimonial3.png");
+}
+
+.testimonialCard{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    margin: 0 5%;
+    animation-name: slideEffect;
+    animation-duration: 1s;
+    transition: all 0.3s;
+}
+
+@keyframes slideEffect{
+    from{opacity: 0.5;}
+    to{opacity: 1;}
+}
+
+.prev, .next{
+    position:absolute;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    font-size: 32px;
+    transition: all 0.3s;
+}
+
+.prev{
+   left:0; 
+}
+
+.next{
+    right:0;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.5;
+}
+
+/* KONTAKT */
+
+#contact{
+    background-image: url("../images/contact.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container{
+    width: 60%;
+}
+
+.send-btn{
+margin: 5% 2%;
+ border-radius: 15px;
+}
+
+/* FOOTER */
+
+.sm-icons{
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.weather-btn{
+   margin-left: 0.5rem;
+   border-radius: 15px;
+}
+
+/* //Javascript-components */
+.weatherCard{
+    gap: 0.8rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid rgba(70, 63, 58, 0.2);
+    border-radius: 15px;
+    background-color: rgba(70, 63, 58, 0.06);
+    margin-left: 0.5rem;
+}
+
+.weatherIcon{
+  width: 50px;  
+}

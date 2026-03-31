@@ -1,0 +1,143 @@
+
+/* SMÅ HJÄLPKLASSER SOM ÅTERANVÄNDS */
+
+/* Color Palette */
+.bcolor-taupe{ background-color: #463f3aff;}
+.bcolor-grey-olive{ background-color: #8a817cff;}
+.bcolor-silver{background-color: #bcb8b1ff; } 
+.bcolor-parchment{ background-color: #f4f3eeff;}
+.bcolor-powder-blush{background-color:#e0afa0ff; } 
+.transparent{ background-color: rgba(47, 42, 36, 0.6);}
+
+.tcolor-taupe{color: #463f3aff;}
+.tcolor-parchment{color: #f4f3eeff;}
+
+/* Code Palette */
+.blue{color: #007ACC;}
+.orange { color: #FFA500; } 
+
+/* Size */
+.w100{
+    width: 100%;
+}
+
+.w80{
+    width: 80%;
+} 
+
+.w45{
+    width: 45%
+}
+
+.w30{
+    width:30%;
+}
+
+.h100{
+    height: 100%;
+}
+
+.h100vh{
+    height: 100vh;
+}
+
+/* SPACES */
+
+/* Margins */
+.m-0{
+    margin: 0;
+}
+
+.mtb5{
+    margin: 5% 0;
+}
+
+.mb-24px{
+    margin-bottom: 24px;
+}
+
+.m-1r{
+    margin: 1rem;
+}
+
+.ml-10p{
+    margin-left: 10%;
+}
+
+.mr-10p{
+    margin-right: 10%;
+}
+
+.ml-1r{
+    margin-left: 1rem;
+}
+
+.mt-1r{
+margin-top: 1rem;
+}
+
+.mb-1r{
+    margin-bottom: 1rem;
+}
+
+.mb-05r{
+    margin-bottom: 0.5rem;
+}
+
+/* Paddings */
+
+.p-1r{
+    padding: 1rem;
+}
+
+.pb-1r{
+    padding-bottom: 1rem;
+}
+
+.pl-1r{
+    padding-left: 1rem;
+}
+
+.pr-1r{
+    padding-right: 1rem;
+}
+
+.plr-1r{
+    padding: 0 1rem;
+}
+
+.pl-3r{
+    padding-left: 3rem;
+}
+
+.p-10p{
+    padding: 10%;
+}
+
+.pb-10p{
+    padding-bottom: 10%;
+}
+
+.pb-36px{
+    padding-bottom: 36px;
+}
+
+.pb-5{
+    padding-bottom: 5%;
+}
+
+/* Typografi */
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.font-z-medium{
+    font-size: 1.3rem;
+}
+
+
+
