@@ -1,6 +1,7 @@
 # Portfolio
 
-Här samlar jag projekt jag byggt under mina studier inom C# och .NET. 
+Här samlar jag projekt jag bygger under mina studier inom C# och .NET. 
+Varje projekt innehåller en egen README med mer information. Fler projekt kommer!
 
 ## Projekt:
 
@@ -14,7 +15,8 @@ Ett spel byggt i C# där användaren möter datorn i en variant av "sten, sax, p
 Backend för bankapplikation med **ASP.NET Web API**, **Database First EF**, JWT-baserad autentisering och **Swagger** för dokumentation.
 Två användartyper: **Admin** och **Kund**, med olika behörigheter.
 
-Varje projekt innehåller en egen README med mer information. Fler projekt kommer!
+### [WebPortfolio - Frontend](./EK_WebPortfolio)
+En personlig webbportfolio som är byggd med HTML, CSS och JavaScript från grunden utan ramverk. Syftet är att presentera vem jag är, mina projekt och mina kunskaper.
 
 ## Tekniker
 - C# (.NET)
@@ -25,10 +27,16 @@ Varje projekt innehåller en egen README med mer information. Fler projekt komme
 - SQL Server
 - JWT authentication & authorization
 - * **AutoMapper** för DTO-mappning
+- HTML
+- CSS
+- Flexbox
+- JavaScript
 
 ## Verktyg
 - Versionshantering med Git & GitHub
 - Visual Studio
 - **Swagger** för API-dokumentation
 - Postman
+- Back-end tjänst: FormSubmit [https://formsubmit.co/] (Webportfolio)
+- Väder API (OpenWeather): [https://openweathermap.org/api] (Webportfolio)
 
