@@ -4,13 +4,13 @@ Här samlar jag projekt jag byggt under mina studier inom C# och .NET.
 
 ## Projekt:
 
-### [ContactList_Adressbok](./ContactList_Adressbok)
+### [ContactList_Adressbok](./Contactlist_Adressbok)
 Ett konsolprogram i C# för att hantera kontakter. Användaren kan lägga till, söka, uppdatera och ta bort kontakter som sparas i en textfil.  
 
-### [Shotgun_Game](./Shotgun_Game)
+### [Shotgun_Game](./Game_Shotgun)
 Ett spel byggt i C# där användaren möter datorn i en variant av "sten, sax, påse" kallad *Shotgun*.  
 
-### APIBankApp (Bankapplikation) – Backend (ASP.NET Web API)
+### [APIBankApp (Bankapplikation) – Backend (ASP.NET Web API)](./ApiBankApp)
 Backend för bankapplikation med **ASP.NET Web API**, **Database First EF**, JWT-baserad autentisering och **Swagger** för dokumentation.
 Två användartyper: **Admin** och **Kund**, med olika behörigheter.
 
