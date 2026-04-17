@@ -33,10 +33,6 @@ align-content: center;
     text-align: center;
 }
 
-.t-right{
-    text-align: start;
-}
-
 .space-between{
     justify-content: space-between;
 }

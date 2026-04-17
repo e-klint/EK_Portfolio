@@ -13,7 +13,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   h2,
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
     #bars-icon{
@@ -75,13 +75,12 @@
 
 /* MOBIL */
 @media (max-width: 767px) {
-  h2,
   h3 {
     font-size: 1rem;
   }
-
-  #subheading{
-    font-size: 0.5rem;
+  
+  .hero-text {
+    font-size: 1.35rem;
   }
 
    /* NAV */
