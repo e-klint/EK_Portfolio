@@ -32,6 +32,9 @@ Webbsidan är användarvänlig och responsiv, dvs. anpassad till desktop, surfpl
 - Väder API (OpenWeather): [https://openweathermap.org/api]
 - Git och github
 
+## Live demo: 
+https://e-klint.github.io/EK_Portfolio/
+
 ## Installation
 Kör projektet lokalt i VS Code.
 
