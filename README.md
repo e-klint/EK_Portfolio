@@ -18,6 +18,8 @@ Två användartyper: **Admin** och **Kund**, med olika behörigheter.
 ### [WebPortfolio - Frontend](./EK_WebPortfolio)
 En personlig webbportfolio som är byggd med HTML, CSS och JavaScript från grunden utan ramverk. Syftet är att presentera vem jag är, mina projekt och mina kunskaper.
 
+Live demo: https://e-klint.github.io/EK_Portfolio/
+
 ## Tekniker
 - C# (.NET)
 - Objektorienterad programmering (OOP)
