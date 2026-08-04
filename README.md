@@ -20,6 +20,12 @@ En personlig webbportfolio som är byggd med HTML, CSS och JavaScript från grun
 
 Live demo: https://e-klint.github.io/EK_Portfolio/
 
+### [TheBookParlour (Bokhandel) – Backend (ASP.NET Web API)](./TheBookParlour)
+Backend för en engelsk bokhandel med ASP.NET Web API, Code First EF, 
+JWT-baserad autentisering och Scalar för dokumentation. Två användartyper: 
+Admin och Kund, med olika behörigheter. API:et hanterar böcker, genrer, 
+författare och varukorg.
+
 ## Tekniker
 - C# (.NET)
 - Objektorienterad programmering (OOP)
@@ -29,6 +35,10 @@ Live demo: https://e-klint.github.io/EK_Portfolio/
 - SQL Server
 - JWT authentication & authorization
 - * **AutoMapper** för DTO-mappning
+- Loggning med ILogger i både controller- och service-lager
+- Enhetstester med xUnit och Moq
+- Azure App Service
+- Azure SQL Database
 - HTML
 - CSS
 - Flexbox
@@ -38,6 +48,7 @@ Live demo: https://e-klint.github.io/EK_Portfolio/
 - Versionshantering med Git & GitHub
 - Visual Studio
 - **Swagger** för API-dokumentation
+- **Scalar** för API-dokumentation
 - Postman
 - Back-end tjänst: FormSubmit [https://formsubmit.co/] (Webportfolio)
 - Väder API (OpenWeather): [https://openweathermap.org/api] (Webportfolio)
