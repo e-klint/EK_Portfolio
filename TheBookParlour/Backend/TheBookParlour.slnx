@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../TheBookParlour.TestUnits/TheBookParlour.TestUnits.csproj" Id="83caa783-78fe-4e5a-b000-786709fc27f0" />
+  <Project Path="TheBookParlour.csproj" />
+</Solution>

@@ -1,0 +1,59 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+
+# Steg 1 – Installera beroenden (dotnet restore)
+- task: DotNetCoreCLI@2
+  displayName: Restore dependencies
+  inputs:
+    command: 'restore'
+    projects: '**/*.slnx'    # Hitta alla .slnx-filer rekursivt
+ 
+# Steg 2 – Bygg koden
+- task: DotNetCoreCLI@2
+  displayName: Build project
+  inputs:
+    command: 'build'
+    projects: '**/*.csproj'
+    arguments: '--configuration Release'
+
+# Steg 3- Här kan man lägga till enhetstester. 
+- task: DotNetCoreCLI@2
+  displayName: Run tests
+  inputs:
+    command: 'test'
+    projects: '**/*.UnitTests.csproj'  # Bara testprojekt
+    arguments: '--configuration Release --no-build'
+
+
+# Steg 4 – Publish
+- task: DotNetCoreCLI@2
+  displayName: 'Publish'
+  inputs:
+    command: 'publish'
+    projects: 'Backend/TheBookParlour.csproj'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/publish --no-build'
+
+# Steg 5 – Deploy till Azure
+- task: AzureRmWebAppDeployment@5
+  displayName: 'Deploy to Azure'
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'bookparlour-prod--az-sub'
+    appType: 'webAppLinux'
+    WebAppName: 'e-klint'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/publish/Backend.zip'
+    RuntimeStack: 'DOTNETCORE|10.0'
+    DeploymentTypeLinux: 'oneDeploy'
