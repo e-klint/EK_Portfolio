@@ -26,30 +26,49 @@ JWT-baserad autentisering och Scalar för dokumentation. Två användartyper:
 Admin och Kund, med olika behörigheter. API:et hanterar böcker, genrer, 
 författare och varukorg.
 
+Projektet innehåller även tillhörande guider som beskriver hur applikationen sätts upp och driftsätts i **Azure**. Guiderna täcker hela flödet från CI/CD-pipeline med Azure DevOps och **Azure App Service**, till konfiguration av **Azure SQL Database**, **Managed Identity**, **Azure Key Vault** för säker hantering av hemligheter samt **Application Insights** för övervakning och loggning.
+
+Guiderna visar steg för steg hur infrastrukturen skapas, hur applikationen automatiskt byggs och deployas vid nya ändringar, samt hur säkerhet och driftmiljö konfigureras i Azure.
+
 ## Tekniker
+
+### Backend
 - C# (.NET)
 - Objektorienterad programmering (OOP)
-- Filhantering (StreamReader/Writer)
--  ASP.NET Web API
-- Entity Framework Core (Database First)
+- ASP.NET Core Web API
+- Entity Framework Core (Code First & Database First)
+- LINQ
 - SQL Server
-- JWT authentication & authorization
-- * **AutoMapper** för DTO-mappning
-- Loggning med ILogger i både controller- och service-lager
+- JWT Authentication & Authorization
+- Dependency Injection
+- DTO-mappning med AutoMapper och Mapster
+- Lagerindelning (Controller, Service, Repository)
+- Loggning med ILogger
 - Enhetstester med xUnit och Moq
-- Azure App Service
-- Azure SQL Database
+
+### Frontend
 - HTML
 - CSS
 - Flexbox
 - JavaScript
 
-## Verktyg
-- Versionshantering med Git & GitHub
+### Moln & DevOps
+- Azure App Service
+- Azure SQL Database
+- Azure DevOps Pipelines (CI/CD)
+- YAML pipelines
+- Azure Key Vault
+- Managed Identity
+- Application Insights
+
+### Verktyg
+- Git & GitHub
 - Visual Studio
-- **Swagger** för API-dokumentation
-- **Scalar** för API-dokumentation
+- Swagger
+- Scalar
 - Postman
-- Back-end tjänst: FormSubmit [https://formsubmit.co/] (Webportfolio)
-- Väder API (OpenWeather): [https://openweathermap.org/api] (Webportfolio)
+
+  Externa API:er och tjänster
+- FormSubmit [https://formsubmit.co/] (formulärhantering för Webportfolio)
+- OpenWeather API [https://openweathermap.org/api] ((väderdata för Webportfolio)
 
